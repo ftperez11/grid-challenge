@@ -22,7 +22,6 @@ function gridReader(array){
     
     function traverseRight(matrix){
         for(let i = 0; i < matrix.length; i++){
-            console.log("this should be row",matrix[i])
             for(let j = 0; j < matrix[i].length-3; j++){
                 var tempProd = matrix[i][j] * matrix[i][j+1] * matrix[i][j+2] * matrix[i][j+3]
                 if(tempProd > greatestProduct){
